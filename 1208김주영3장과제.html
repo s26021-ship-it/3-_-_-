@@ -8,11 +8,11 @@
 <body>
      <style>
         html, body {margin: 0; padding: 0; height: 100%;}
-        header {width: 100%; height: 15%;
+        header {width: 100%; height: 10%;
         background: white;}
-        section {width: 100%; height: 70%; float: left; 
+        section {width: 100%; height: 120%; float: left; 
         background: skyblue;}
-        footer {width: 100%; height: 15%; clear: both; 
+        footer {width: 100%; height: 30%; clear: both; 
         background: yellow;}
     </style>
 </body>
@@ -20,15 +20,15 @@
 <body>
         <header><h1>명함 신청 페이지</h1></header>
         <section>
-            <div>
+            <p>
                 <span>1. 학년</span>
                 <select name = "grade">
                 <option value = "1">1학년</option>
                 <option value = "2">2학년</option>
                 <option value = "3">3학년</option>
                 </select>
-            </div>
-            <div>
+            </p>
+            <p>
                 <span>2. 반</span>
                 <select name = "class">
                 <option value = "4">1반</option>
@@ -36,51 +36,76 @@
                 <option value = "6">3반</option>
                 <option value = "7">4반</option>
                 </select>
-            </div>
-            <form name = "fo" method = "get">
-            <div>3. 번호: <input type = "text" size = "15" value = ""></div>
-            <div>4. 이름: <input type = "text" size = "15" value = ""></div>
-            <div>
+            </p>
+            <p>
+                <form name = "fo" method = "get">
+                3. 번호: <input type = "text" size = "15" value = "">
+            </p>
+            <p>
+                4. 이름: <input type = "text" size = "15" value = "">
+            </p>
+            
+            <p>
                 <span class="section-title">5. 원하는 시안 선택</span>
-            </div>
+            </p>
             
             <div>
                 <img src = "https://lh7-rt.googleusercontent.com/formsz/AN7BsVCherQ6yMUjmXW0gCRKc1nZuHfLQV0kwh2n64XaO7WTbSKZLBxS2T-1ne4VtoAT8k6LIcmieNu_M9Mf6iw7wukTLGHW0y3pX21-pIelI0Vv2llcuQYizn-Q3LHjM5uVBhqVYeuuCXrvyjAVyvy2kf5QGYvTdBhMJCVx?key=zXC0opYBWS7IVmphVU1lkQ" width = "600" height = "400" style="margin-left: 0px;">
                 
             </div>
-            <input type="radio" name="design" value="1"> 1안
+                <div><input type="radio" name="design" value="1"> 1안
                 <input type="radio" name="design" value="2"> 2안
                 <input type="radio" name="design" value="3"> 3안
-                <input type="radio" name="design" value="4"> 4안
+                <input type="radio" name="design" value="4"> 4안</div>
                 <input type="radio" name="design" value="5"> 5안
                 <input type="radio" name="design" value="6"> 6안
                 <input type="radio" name="design" value="7"> 7안
-                <input type="radio" name="design" value="8"> 8안 
+                <input type="radio" name="design" value="8"> 8안
                 
-            <div>
+            <p>
                 <span>6. 내가 명함에 넣고 싶은 항목 선택</span>
+            </p>
+
+            <p>
                 <form>
-                이름 <input type = "checkbox" value = "9">
-                이메일 <input type = "checkbox" value = "10">
-                디스코드 아이디 <input type = "checkbox" value = "11">
-                깃헙 아이디 <input type = "checkbox" value = "12">
+                <div>이름 <input type = "checkbox" value = "9">
+                이메일 <input type = "checkbox" value = "10"></div>
+                <div>디스코드 아이디 <input type = "checkbox" value = "11">
+                깃헙 아이디 <input type = "checkbox" value = "12"></div>
                 관심 분야 <input type = "checkbox" value = "13">
                 휴대폰 번호 <input type = "checkbox" value = "14">
                 </form>
-            </div>
+            </p>
 
-            <div>
-                7. 기타 건의사항
+            <p>
+                7. 기타 건의사항</p>
                 <textarea 
                     cols = "20" 
                     rows = "10"
                     wrap = "HARD">     
 
     </textarea><!--자기소개에서 세로, 가로 순 / wrap은 자동 줄바-->
-            </div>
-        </section>
+        <p>
+            <input type = "submit" value = "전송하기">
+            <button type = "submit">초기화 하기</button>
+        </p>
+         </section>
         
         
-        <footer>footer</footer>
+        <footer>
+            <h1>QnA</h1>
+            <details>
+                <p><summary>언제까지 내요?</summary></p>
+                <p><summary>3월 11일까지 제출합니다</summary></p>
+            </details>
+            <details>
+                <p><summary>명함 얼마에요?</summary></p>
+                <p><summary>무료입니다</summary></p>
+            </details>
+            <details>
+                <p><summary>늦게 내면 어떻게 돼요?</summary></p>
+                <p><summary>늦게 내면 어떻게 돼요?</summary></p>>
+            </details>
+        </footer>
     </body>
 </html>
